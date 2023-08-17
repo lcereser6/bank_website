@@ -5,6 +5,6 @@ files:
     destination: /home/ubuntu/bank_website/
 hooks:
   AfterInstall:
-    - location: scripts/restart.sh
+    - location: scripts/restart_next.sh
       timeout: 300
       runas: ubuntu
