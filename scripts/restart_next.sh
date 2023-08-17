@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/bank_website
+cd /home/ubuntu/bank_website
 pm2 restart bank_website 

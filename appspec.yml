@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: ~/bank_website/
+    destination: /home/ubuntu/bank_website/
 hooks:
   AfterInstall:
-    - location: scripts/restart_next.sh
+    - location: scripts/restart.sh
       timeout: 300
       runas: ubuntu
