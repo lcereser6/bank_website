@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/bank_website/
+    destination: /home/ubuntu/bank_website_build/
 hooks:
   AfterInstall:
     - location: scripts/restart_next.sh
