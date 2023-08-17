@@ -10,6 +10,4 @@ phases:
       - yarn build
 artifacts:
   files:
-    - '.next/**/*'
-    - 'appspec.yml'
-    - 'scripts/restart_next.sh'
+    - '**/*''
