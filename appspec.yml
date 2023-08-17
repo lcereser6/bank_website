@@ -1,7 +1,10 @@
 version: 0.0
 os: linux
+files:
+  - source: /
+    destination: ~/bank_website/
 hooks:
-  ApplicationStart:
-    - location: ./deploy.sh
-      timeout: 600
+  AfterInstall:
+    - location: scripts/restart_next.sh
+      timeout: 300
       runas: ubuntu

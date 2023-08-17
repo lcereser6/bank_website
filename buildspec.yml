@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install -g yarn
+      - yarn install
+  build:
+    commands:
+      - yarn build
+artifacts:
+  files:
+    - '**/*'
+    - 'appspec.yml'
+    - 'scripts/restart_next.sh' 
+  base-directory: '.next'
