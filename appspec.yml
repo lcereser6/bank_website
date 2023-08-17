@@ -4,6 +4,10 @@ files:
   - source: /
     destination: /home/ubuntu/bank_website_build/
 hooks:
+  BeforeInstall:
+    - location: scripts/install_dep.sh
+      timeout: 300
+      runas: ubuntu
   AfterInstall:
     - location: scripts/restart_next.sh
       timeout: 300
